@@ -20,7 +20,7 @@ The dataset is a subset of features from the BRFSS survey 2015, obtained from Ka
 
 •	Target Variable: Binary indicator of heart disease status (1 for respondents who reported having coronary heart disease (CHD) or myocardial infarction (MI), 0 otherwise). 
 
-**Feature selection**
+**Feature Selection**
 
 •	Ordinal Features (Label Encoded): Age, BMI, General Health, Mental Health, Physical Health, Household Income
 
@@ -47,8 +47,6 @@ Moreover, hyperparameter such as n_estimator, max_depth, min_split, min_samples 
 **Model Evaluation Metrics**
 
 The model was primarily evaluated on:
-
-•	Precision: Measures the proportion of true positives among predicted positives, essential in understanding model reliability.
 
 •	Recall: Measures the model’s ability to correctly identify all positive cases (sensitivity).
 
