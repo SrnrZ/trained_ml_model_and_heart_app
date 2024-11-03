@@ -15,12 +15,15 @@ The dataset is a subset of features from the BRFSS survey 2015, obtained from Ka
 **Data Structure**
 
 •	Total Records: 253,680 survey responses
+
 •	Features: 21 features representing individual characteristics and behaviors
+
 •	Target Variable: Binary indicator of heart disease status (1 for respondents who reported having coronary heart disease (CHD) or myocardial infarction (MI), 0 otherwise). 
 
 **Feature selection**
 
 •	Ordinal Features (Label Encoded): Age, BMI, General Health, Mental Health, Physical Health, Household Income
+
 •	Binary Features (One-Hot Encoded): Blood Pressure, Smoking, High Cholesterol, Cholesterol Check, Gender, Physical Activity, Fruit Consumption, Vegetable Consumption, Alcohol Consumption, Health Care Access, Stroke, Health Costs, Walk Difficulty.
 
 **Data Imbalance**
@@ -32,6 +35,7 @@ The dataset is highly imbalanced, with a significantly smaller proportion of res
 •	Feature Encoding:
 o	Ordinal variables are label-encoded to maintain inherent order.
 o	Binary variables are one-hot encoded to ensure they are represented as distinct categories.
+
 •	Data Resampling:
 o	Given the high imbalance in the target variable, Random UnderSampling has proven to significantly improve recall performance metrics, by reducing the number of majority class samples.
 
@@ -43,8 +47,11 @@ Moreover, hyperparameter such as n_estimator, max_depth, min_split, min_samples 
 **Model Evaluation Metrics**
 
 The model was primarily evaluated on:
+
 •	Precision: Measures the proportion of true positives among predicted positives, essential in understanding model reliability.
+
 •	Recall: Measures the model’s ability to correctly identify all positive cases (sensitivity).
+
 •	Confusion Matrix: A visual assessment of true positives, false positives, true negatives, and false negatives.
 
 **Feature Contribution Function**
@@ -55,17 +62,24 @@ Random Forests improve perfomance metrics by aggregating multiple decision tress
 
 The Streamlit app allows users to input various health-related variables to estimate a health-related outcome based on the model's predictions. 
 Key Features:
+
 1.	User Input for Health Variables: The app presents a form where users can enter health data that follow the features the a machine learning model was trained on.
-2.	Predictive Model Integration: The app then compiles the input data into a dictionary (example_input) and passes it to a predefined predict function. The predict function uses the input data to generate an outcome estimate, which is then displayed to the user.
-3.	Output: Once the user submits their information, the app calls the predict function, which uses a machine learning model to generate a prediction.
+
+3.	Predictive Model Integration: The app then compiles the input data into a dictionary (example_input) and passes it to a predefined predict function. The predict function uses the input data to generate an outcome estimate, which is then displayed to the user.
+
+4.	Output: Once the user submits their information, the app calls the predict function, which uses a machine learning model to generate a prediction.
 
 **Key Findings Summary**
 
 1.	Data Imbalance Impact: Due to the high imbalance in heart disease cases, models without resampling performed poorly in recall, failing to identify a large portion of positive cases. The high imbalance led to an initial high accuracy rate, which, however, is unsuitable for categorical (label) problems.
+
 2.	Effectiveness of Resampling: Undersampling improved model performance by forcing the classifier to pay more attention to minority cases, though it led to some data loss. , This has succesfully been addressed with resampling the data, increasing the recall rate for True Positives from 0.1 up to over 0.8.
+
 3.	Random Forest Model: The Random Forest Model appeared to be suitable fort he data set.
 4.	Hyperparameter Tuning: Tuning hyperparameters improved recall effectiveness by 3 basis points and thus made a fair performance increase contribution, though not as much as resampling.
-5.	Risk Contribution Function: Appeared to provide a good overview of the impact of certain features regarding given samples, improving the understanding of indivual risk patterns.
+
+5.	Risk Contribution Function: Appeared to provide a good overview of the impact of certain features regarding given samples, improving the understanding of indivual risk patterns:
+
 6.	Risk Indicator Application: This app could be used in a healthcare setting to provide individuals with first insights into health risks based on their self-reported lifestyle and health data. It allows for quick screening without requiring detailed medical records.
 
 **Result evaluation and conclusion**
@@ -78,14 +92,19 @@ Future work could explore more fine tuning techniques, such as dropping atomic l
 **Repository Contents**
 
 •	data/: heart_disease_health_indicators_BRFSS2015.csv
+
 •	.py files: trained_model.py; predict_function.py; app.py
+
 •	Pickle files: model.pkl; normalizer.pkl; column_to_normalize.pkl
+
 •	presentation/: Slide deck summarizing the project findings and key insights.
 
 **References**
 
 •	Behavioral Risk Factor Surveillance System (BRFSS)
+
 •	Heart Disease Health Indicators Dataset on Kaggle
+
 •	Feature Contribution Function on scikit-learn
 
 
