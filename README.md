@@ -2,7 +2,7 @@
 
 **Project Overview**
 
-Heart disease is a leading cause of morbidity and mortality worldwide. Understanding the risk factors and being able to predict potential cases through data can improve early interventions. Using machine learning, this project seeks to identify patterns in lifestyle, demographic, and health-related factors that contribute to heart disease and a provide a personal Risk Indicator Application.
+Heart disease is a leading cause of morbidity and mortality worldwide. Understanding the risk factors and being able to predict potential cases through data can improve early interventions. Using machine learning, this project seeks to identify patterns in lifestyle, demographic, and health-related factors that contribute to heart disease and provide a personal Risk Indicator Application.
 
 **Data Source**
 
@@ -33,10 +33,13 @@ The dataset is highly imbalanced, with a significantly smaller proportion of res
 **Preprocessing Steps**
 
 •	Feature Encoding:
+
 o	Ordinal variables are label-encoded to maintain inherent order.
+
 o	Binary variables are one-hot encoded to ensure they are represented as distinct categories.
 
 •	Data Resampling:
+
 o	Given the high imbalance in the target variable, Random UnderSampling has proven to significantly improve recall performance metrics, by reducing the number of majority class samples.
 
 **Model Selection and Hyperparameter Tuning**
