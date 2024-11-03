@@ -57,7 +57,7 @@ The model was primarily evaluated on:
 
 **Feature Contribution Function**
 
-Random Forests improve perfomance metrics by aggregating multiple decision tress but lose interpretability compared to a signle tree. Feature importance mitigates this problem. It is aimed at calculating the contribution of each feature to the final model's decision for a specific instance. More on scikit-learn. 
+Random Forests improve perfomance metrics by aggregating multiple decision tress but lose interpretability compared to a signle tree. Feature importance mitigates this problem. It is aimed at calculating the contribution of each feature to the final model's decision for a specific instance. Feature importances are computed as the mean and standard deviation of accumulation of the impurity decrease within each tree. More on scikit-learn. 
 
 **Risk Indicator Application**
 
@@ -88,7 +88,7 @@ Key Features:
 
 The recall score for having no heart disease is at 0.72 and for having heart disease at 0.82. The precision for having no heart disease is at 0.97 and for having heart disease at 0.23. The model may be biased toward predicting heart diseases more often, leading to high recall (capturing most actual class heart disease cases) but low precision (many of those predictions are incorrect). This is common when the decision threshold is low, causing the model to classify more samples as having heart disease to ensure it catches most true positives.
 
-What does this mean for predicting  heart disease risk given a sample of features via the streamlit app? The model is more sensitive to risk factors for heart diseases as they become more significant (e.g. very high blood pressure or high cholesterin) and/or accumulate with more risk factors (e.g. low general and mental health). This outcome is assumed to be suitable, given the aim of the application to sensitize the user to the risks of having a heart disease.
+As a result, the model is more sensitive to risk factors for heart diseases as they become more significant (e.g. very high blood pressure or high cholesterin) and/or accumulate with more risk factors (e.g. low general and mental health). This outcome is assumed to be suitable, given the aim of the application to sensitize the user to the risks of having a heart disease.
 Future work could explore more fine tuning techniques, such as dropping atomic links as well asconsulting domain experts for better insight into feature relevance and data interpretation. In this regard, result interpretation and reccomendations could be further automated via a chat-bot based on LLMs.
 
 **Repository Contents**
