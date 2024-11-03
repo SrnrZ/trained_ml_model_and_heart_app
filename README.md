@@ -71,9 +71,10 @@ Key Features:
 
 1.	Data Imbalance Impact: Due to the high imbalance in heart disease cases, the model without resampling performed poorly in recall, failing to identify a large portion of positive cases. The high imbalance led to an initial high accuracy rate, which, however, is unsuitable for categorical (label) problems.
 
-2.	Effectiveness of Resampling: Undersampling improved model performance by forcing the classifier to pay more attention to minority cases, though it led to some data loss. , This has succesfully been addressed with resampling the data, increasing the recall rate for True Positives from 0.1 up to over 0.8.
+2.	Effectiveness of Resampling: Undersampling improved model performance by forcing the classifier to pay more attention to minority cases, though it led to some data loss. This has succesfully been addressed with resampling the data, increasing the recall rate for True Positives from 0.1 up to over 0.8.
 
 3.	Random Forest Model: The Random Forest Model appeared to be suitable fort he data set.
+
 4.	Hyperparameter Tuning: Tuning hyperparameters improved recall effectiveness by 3 basis points and thus made a fair performance increase contribution, though not as much as resampling.
 
 5.	Risk Contribution Function: Appeared to provide a good overview of the impact of certain features regarding given samples, improving the understanding of indivual risk patterns:
