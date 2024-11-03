@@ -69,7 +69,7 @@ Key Features:
 
 **Key Findings Summary**
 
-1.	Data Imbalance Impact: Due to the high imbalance in heart disease cases, models without resampling performed poorly in recall, failing to identify a large portion of positive cases. The high imbalance led to an initial high accuracy rate, which, however, is unsuitable for categorical (label) problems.
+1.	Data Imbalance Impact: Due to the high imbalance in heart disease cases, the model without resampling performed poorly in recall, failing to identify a large portion of positive cases. The high imbalance led to an initial high accuracy rate, which, however, is unsuitable for categorical (label) problems.
 
 2.	Effectiveness of Resampling: Undersampling improved model performance by forcing the classifier to pay more attention to minority cases, though it led to some data loss. , This has succesfully been addressed with resampling the data, increasing the recall rate for True Positives from 0.1 up to over 0.8.
 
