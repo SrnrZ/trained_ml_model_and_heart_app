@@ -1,15 +1,19 @@
 # Heart Disease Prediction Using Machine Learning
 
 **Project Overview**
+
 Heart disease is a leading cause of morbidity and mortality worldwide. Understanding the risk factors and being able to predict potential cases through data can improve early interventions. Using machine learning, this project seeks to identify patterns in lifestyle, demographic, and health-related factors that contribute to heart disease and a provide a personal Risk Indicator Application.
 
 **Data Source**
+
 This project focuses on predicting heart disease risk using machine learning techniques applied to the Behavioral Risk Factor Surveillance System (BRFSS) 2015 survey data. BRFSS is a health-related telephone survey that is collected annually by the CDC. Each year, the survey collects responses from over 400,000 Americans on health-related risk behaviors, chronic health conditions, and the use of preventative services.
 
 Data Set
+
 The dataset is a subset of features from the BRFSS survey 2015, obtained from Kaggle. It has been pre-processed and cleaned to focus on risk factors relevant to heart disease, diabetes, and other chronic conditions. The feature selection can be confirmed by various studies, e.g. „Risk Factors for Coronary Artery Disease“ by Jonathan C. Brown et al or „Number of Coronary Heart Disease Risk Factors and Mortality in Patients With First Myocardial Infarction“ by John G Canto, Catarina I Kiefe, William J Rogers et al. John Hopkins Medicien Center…, which all largely refer to  major risk factors such as drinking, smoking, diabetes, obesity, dyslipidemia and hypertension.
 
 Data Structure
+
 •	Total Records: 253,680 survey responses
 •	Features: 21 features representing individual characteristics and behaviors
 •	Target Variable: Binary indicator of heart disease status (1 for respondents who reported having coronary heart disease (CHD) or myocardial infarction (MI), 0 otherwise). 
