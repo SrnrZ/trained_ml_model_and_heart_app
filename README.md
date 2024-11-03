@@ -77,7 +77,7 @@ Key Features:
 
 4.	Hyperparameter Tuning: Tuning hyperparameters improved recall effectiveness by 3 basis points and thus made a fair performance increase contribution, though not as much as resampling.
 
-5.	Risk Contribution Function: Appeared to provide a good overview of the impact of certain features regarding given samples, improving the understanding of indivual risk patterns:
+5.	Risk Contribution Function: Appeared to provide a good overview of the impact of certain features regarding given samples, improving the understanding of indivual risk patterns.
 
 6.	Risk Indicator Application: This app could be used in a healthcare setting to provide individuals with first insights into health risks based on their self-reported lifestyle and health data. It allows for quick screening without requiring detailed medical records.
 
